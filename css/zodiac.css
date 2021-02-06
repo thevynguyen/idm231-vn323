@@ -1,0 +1,65 @@
+
+@font-face {
+    font-family: 'chewy-regular';
+    src: url(../fonts/chewy-regular-webfont.woff2) format('woff2'),
+    url(../fonts/chewy-regular-webfont.woff) format('woff');
+}
+
+body {
+    font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+h1 {
+    color: white; 
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.label {
+    margin: .74em;
+    padding-right: 40%;
+    padding-left: 40%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+input {
+    background-color: #959595;
+    border: none;
+    padding: 10px 60px;
+    text-align: center; 
+    color: white; 
+    margin: .75em;
+    border-radius: 2px;
+    font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+button {
+    background-color: #959595;
+    border: none;
+    font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: .75em;
+    cursor: pointer; 
+    border-radius: 36px;
+}
+
+html {
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    /* how do I cut off the height*/
+}
