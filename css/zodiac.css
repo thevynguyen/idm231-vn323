@@ -57,14 +57,11 @@ button {
 }
 
 .main-container {
-    height: 48rem;
-    margin: 0 auto 3rem;
-    position: relative;
-    width: 48rem;
     display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(5, 20%);
-    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 html {
