@@ -56,12 +56,81 @@ button {
     border-radius: 36px;
 }
 
-.main-container {
+#mainContainer {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-template-areas: 
+    'orange white pink'
+    'blue brown lime'
+    'black yellow green'
+    'purple cyan red';
+    position: relative;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#orange {
+    grid-area: orange;
+}
+
+#white {
+    grid-area: white;
+    top: 2em;
+}
+
+#pink {
+    grid-area: pink;
+    top: 8rem;
+}
+
+#blue {
+    grid-area: blue;
+
+}
+
+#brown {
+    grid-area: brown;
+    
+}
+
+#lime {
+    grid-area: lime;
+}
+
+#black {
+    grid-area: black;
+}
+
+#yellow {
+    grid-area: yellow;
+    bottom: 2rem;
+}
+
+#green {
+    grid-area: green;
+}
+
+#purple {
+    grid-area: purple;
+}
+
+#cyan {
+    grid-area: cyan;
+}
+
+#red {
+    grid-area: red;
+}
+
+.crewmate {
+    display: block;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 html {
