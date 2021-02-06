@@ -4,6 +4,19 @@
     src: url(../fonts/chewy-regular-webfont.woff2) format('woff2'),
     url(../fonts/chewy-regular-webfont.woff) format('woff');
 }
+    
+ @font-face {
+    font-family: 'blinker-regular';
+    src: url(../fonts/blinker-regular-webfont.woff2) format('woff2'),
+    url(../fonts/blinker-regular-webfont.woff) format('woff');
+ }   
+
+ @font-face{
+    font-family: 'blinker-semibold';
+    src: url(../fonts/blinker-semibold-webfont.woff2) format('woff2'),
+    url(../fonts/blinker-semibold-webfont.woff) format('woff');
+ }
+ 
 
 body {
     font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
@@ -41,7 +54,7 @@ input {
     font-size: 22px;
 }
 
-button {
+#submit {
     background-color: #959595;
     border: none;
     font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
@@ -56,7 +69,18 @@ button {
     border-radius: 36px;
 }
 
-#mainContainer {
+.mainContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    justify-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 3em;
+}
+
+
+/*.mainContainer {
     display: grid;
     grid-template-columns: repeat(5, 100px);
     grid-template-rows: repeat(5, 100px);
@@ -70,20 +94,21 @@ button {
     justify-items: center;
     align-items: center;
     justify-content: center;
-}
+} */
 
+/*
 #orange {
     grid-area: orange;
 }
 
 #white {
     grid-area: white;
-    top: 2em;
+  
 }
 
 #pink {
     grid-area: pink;
-    top: 8rem;
+  
 }
 
 #blue {
@@ -106,7 +131,7 @@ button {
 
 #yellow {
     grid-area: yellow;
-    bottom: 2rem;
+    
 }
 
 #green {
@@ -124,6 +149,7 @@ button {
 #red {
     grid-area: red;
 }
+*/
 
 .crewmate {
     display: block;
@@ -131,6 +157,51 @@ button {
     background: none;
     border: none;
     padding: 0;
+}
+
+/* Card Container Description */
+
+img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    
+}
+
+.cardContainer {
+    border-radius: 14px;
+    background-color: white;
+    transition: 0.5s;
+    padding: 1em 1em;
+    margin: 4em 10em 5em;
+    color: black;
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: black;
+    margin: 0.4em
+}
+
+h3 {
+    font-family: 'blinker-semibold', Arial, Helvetica, sans-serif;
+    font-size: .75em;
+    color: black;
+    margin-top: 1.1em;
+}
+
+p {
+    font-family: 'blinker-regular', Arial, Helvetica, sans-serif;
+    font-size: .5em;
+    color: black;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+    text-align: start;
 }
 
 html {
