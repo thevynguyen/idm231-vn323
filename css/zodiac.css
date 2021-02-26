@@ -36,12 +36,11 @@ body {
     flex-direction: column;
     color: white;
     text-align: center;
-    margin-top: 3.5em;
 }
 
 /* Question Title */
 .label {
-    margin: 1em;
+    margin: .75em;
     padding-right: 40%;
     padding-left: 40%;
     font-size: 1.1em;
@@ -77,96 +76,21 @@ input {
     border-radius: 36px;
 }
 
-/*
-.mainContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 100px);
-    justify-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 3em;
-}
-*/
-
-/*.mainContainer {
-    display: grid;
-    grid-template-columns: repeat(5, 100px);
-    grid-template-rows: repeat(5, 100px);
-    grid-template-areas: 
-    'orange white pink'
-    'blue brown lime'
-    'black yellow green'
-    'purple cyan red';
-    position: relative;
-    margin: auto;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-} */
-
-/*
-#orange {
-    grid-area: orange;
-}
-
-#white {
-    grid-area: white;
-  
-}
-
-#pink {
-    grid-area: pink;
-  
-}
-
-#blue {
-    grid-area: blue;
-
-}
-
-#brown {
-    grid-area: brown;
-    
-}
-
-#lime {
-    grid-area: lime;
-}
-
-#black {
-    grid-area: black;
-}
-
-#yellow {
-    grid-area: yellow;
-    
-}
-
-#green {
-    grid-area: green;
-}
-
-#purple {
-    grid-area: purple;
-}
-
-#cyan {
-    grid-area: cyan;
-}
-
-#red {
-    grid-area: red;
-}
-*/
-
 .crewmate {
-    display: block;
-    position: relative;
     background: none;
     border: none;
-    padding: 0;
+    color: none;
+    padding: 15px;
 }
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 2em;
+}
+
 
 /* Card Container Description */
 
