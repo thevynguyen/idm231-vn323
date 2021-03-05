@@ -77,13 +77,83 @@ input {
     border-radius: 36px;
 }
 
+/* Modal */
 
-/* 12 Buttons */
-.crewmate {
-    background: none;
+[hidden] {
+    display: none !important;
+}
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-body {
+    background-color: white;
+    border-radius: .75rem;
+
+    height: 65vh;
+    max-width: 26vw;
+
+    position: relative;
+    z-index: 101;
+
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.zButton {
+    width: 150px;
+    height: 150px;
     border: none;
-    color: none;
-    padding: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    background-repeat: no-repeat;
+}
+
+#white {
+    background-image: url('../images/white.svg');
+}
+
+/* Description */
+#zMoreInfo {
+    font-family: 'blinker-regular', 'Times New Roman', Times, serif;
+    font-size: .65em;
+    text-align: start;
+    line-height: 1.35em;
+    padding: 5px 20px;
+}
+/* Close Modal */
+
+#btn-modal-close {
+    position: absolute;
+    border: none;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    background: #c4c4c4;
+    color: #fff;
+    border-radius: 50px;
 }
 
 main {
@@ -94,134 +164,11 @@ main {
     margin: 2em;
 }
 
-.description-title {
-    color: black; 
-    text-align: center
-}
-
-/* Card Description Box */
-
-.card {
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 1em;
-}
-
-h2 {
-    font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
-    font-size: 4em;
-    color: black;
-    margin: 0.4em
-}
-
-h3 {
-    font-family: 'blinker-semibold', Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    color: black;
-    margin-top: 1.1em;
-}
-
-p {
-    font-family: 'blinker-regular', Arial, Helvetica, sans-serif;
-    font-size: 1.6em;
-    color: black;
-    width: 70%;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5em;
-    text-align: start;
-}
-
-/* Modal */
-.popup .overlay {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background: rgba( 0,0,0,0.7);
-    z-index: 1;
-    display: none;
-}
-
-.popup .content {
-    position: absolute;
-    border-radius: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: #fff;
-    width: 587px;
-    height: 707px;
-    z-index: 2;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.popup .close-btn {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 30px;
-    height: 30px;
-    background: #222;
-    color: #fff;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-.popup.active .overlay {
-    display: block;
-
-}
-
-.popup.active .content {
-    transition: all 300ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-/*
-
-Card Container Description 
-
-img {
-    border-radius: 50%;
-    object-fit: cover;
-    margin: auto;
-}
-
-h2 {
-    font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    color: black;
-    margin: 0.4em
-}
-
-h3 {
-    font-family: 'blinker-semibold', Arial, Helvetica, sans-serif;
-    font-size: .75em;
-    color: black;
-    margin-top: 1.1em;
-}
-
-p {
-    font-family: 'blinker-regular', Arial, Helvetica, sans-serif;
-    font-size: .5em;
-    color: black;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5em;
-    text-align: start;
-}*/
 
 
-/* Arrow Buttons */
+
+
+/* Arrow Buttons 
 a {
     text-decoration: none;
     display: inline-block;
@@ -237,9 +184,12 @@ a {
     border-radius: 50%;
     color: #c4c4c4;
     transform: translate(250px, -80px);
-}
+}'
+
+*/
 
 /* Background Image */
+
 html {
     background-image: url("../images/background.png");
     background-position: center;

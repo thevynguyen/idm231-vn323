@@ -31,8 +31,36 @@
 
 
     <main>
+       
+        <div id="display" src="images/background.png" alt="blank"></div>
+        <div>
+            <button class="zButton" id="white"></button>
+            <button class="zButton" id="pink"></button>
+            <button class="zButton" id="blue"></button>
+        </div>
 
-        <div class="column">
+        <!--Modal-->
+        <div id="modal" class="modal" hidden>
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div>
+                        <img id="zDisplayImg" src="images/white.svg" alt="zodiac button img">
+                    </div>
+                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <div id="zMoreInfo">
+                        <p>Description insert here!</p>
+                    </div>
+                    <button id="btn-modal-close" class="toggle-modal">&times;</button>
+                </div>
+            </div>
+            <div class="blanket"></div>
+        </div>
+
+
+
+
+
+        <!-- <div class="column">
 
             <button id="white" class="crewmate" onclick="togglePopup()">
                 <img src="images/white.svg" width="100" height="100">
@@ -153,7 +181,7 @@
                 <div class="popup" id="popup-11">
                     <div class="overlay"></div>
                     <div class="content">
-                        <div class="close-btn" onclick="togglePopup()">&times;</div>
+                        <div class="close-btn" onclick="togglePopup11()">&times;</div>
                         <img src="images/red_card.svg" class="card" width="200" height="200" alt="Red Card">
                         <h2 class="description-title"><b>Red</b></h2>
                         <h3>December 22 - January 19</h3>
@@ -179,7 +207,7 @@
                 </div>
             </button>
 
-        </div>
+        </div> -->
 
     </main>
     <script type="text/javascript" src="main.js"></script>
