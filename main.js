@@ -8,6 +8,18 @@
 // }
 
 var whiteObj = document.getElementById('white');
+var blackObj = document.getElementById('black');
+var yellowObj = document.getElementById('yellow');
+var purpleObj = document.getElementById('purple');
+var pinkObj = document.getElementById('pink');
+var cyanObj = document.getElementById('cyan');
+var limeObj = document.getElementById('lime');
+var redObj = document.getElementById('red');
+var orangeObj = document.getElementById('orange');
+var greenObj = document.getElementById('green');
+var brownObj = document.getElementById('brown');
+var blueObj = document.getElementById('green');
+
 
 const displayObj = document.getElementById('display');
 
@@ -31,6 +43,59 @@ yellowObj.addEventListener('click', function (evt) {
     userPicked(idName);
 });
 
+purpleObj.addEventListener('click', function (evt) {
+    console.log('purple button clicked: ' + evt.target.id);
+    const idName = evt.target.id;
+    userPicked(idName);
+});
+
+pinkObj.addEventListener('click', function (evt) {
+    console.log('pink button clicked: ' + evt.target.id);
+    const idName = evt.target.id;
+    userPicked(idName);
+});
+
+cyanObj.addEventListener('click', function (evt) {
+    console.log('cyan button clicked: ' + evt.target.id);
+    const idName = evt.target.id;
+    userPicked(idName);
+});
+
+limeObj.addEventListener('click', function (evt) {
+    console.log('lime button clicked: ' + evt.target.id);
+    const idName = evt.target.id;
+    userPicked(idName);
+});
+
+redObj.addEventListener('click', function (evt) {
+    console.log('red button clicked: ' + evt.target.id);
+    const idName = evt.target.id;
+    userPicked(idName);
+});
+
+orangeObj.addEventListener('click', function (evt) {
+    console.log('orange button clicked: ' + evt.target.id);
+    const idName = evt.target.id;
+    userPicked(idName);
+});
+
+greenObj.addEventListener('click', function (evt) {
+    console.log('green button clicked: ' + evt.target.id);
+    const idName = evt.target.id;
+    userPicked(idName);
+});
+
+brownObj.addEventListener('click', function (evt) {
+    console.log('brown button clicked: ' + evt.target.id);
+    const idName = evt.target.id;
+    userPicked(idName);
+});
+
+blueObj.addEventListener('click', function (evt) {
+    console.log('blue button clicked: ' + evt.target.id);
+    const idName = evt.target.id;
+    userPicked(idName);
+});
 
 function userPicked(whichOne) {
     console.log('userPicked called: ' + whichOne);
@@ -70,6 +135,123 @@ function userPicked(whichOne) {
             zDateRangeObj.innerHTML = 'October 23 - November 21';
             // display description
             zMoreInfo.innerHTML = '<p>SpongeBob in space is what Yellow truly is at heart. Yellow, you’re good at hiding behind your words, but when the right time comes you have no problem whipping it a weapon and running away from a body or the truth. A big thanks to your passionate and assertive nature.<p>';
+            // show hide modal
+            modal.hidden = !modal.hidden;
+            // play sound
+                break;
+        case 'purple':
+            // displayObj.src = 'images/background.png';
+            zDisplayObj.src = 'images/purple_card.svg';
+            // display title
+            zTitleObj.innerHTML = 'PURPLE CREWMATE';
+            // display date range
+            zDateRangeObj.innerHTML = 'September 23 - October 22';
+            // display description
+            zMoreInfo.innerHTML = '<p>Unstoppable. Literally, unstoppable. No one ever suspects you, unless you carelessly vent per usual. You are the “mom friend” of the crew and you make sure everything is concise and clear through your fair-minded and diplomatic persona. If you see a threat you eliminate it immediately and quietly to protect your winning chances.<p>';
+            // show hide modal
+            modal.hidden = !modal.hidden;
+            // play sound
+                break;
+         case 'pink':
+            // displayObj.src = 'images/background.png';
+            zDisplayObj.src = 'images/pink_card.svg';
+            // display title
+            zTitleObj.innerHTML = 'PINK CREWMATE';
+            // display date range
+            zDateRangeObj.innerHTML = 'August 23 - September 22';
+            // display description
+            zMoreInfo.innerHTML = '<p>Out of all the Crewmates, you are the sweetheart of the crew therefore no one would dare to pick you out of a line-up for imposter. Pink tends to be the most loyal, kind, and hardworking compared to the others. Your attention to small detail has become an advantage on the battlefield.<p>';
+            // show hide modal
+            modal.hidden = !modal.hidden;
+            // play sound
+                break;
+         case 'cyan':
+            // displayObj.src = 'images/background.png';
+            zDisplayObj.src = 'images/cyan_card.svg';
+            // display title
+            zTitleObj.innerHTML = 'CYAN CREWMATE';
+            // display date range
+            zDateRangeObj.innerHTML = 'July 23 - August 22';
+            // display description
+            zMoreInfo.innerHTML = '<p>If anyone was the easiest to accuse then it be Cyan because you tend to take the blame for everything even if you weren’t in the same room. However, you don’t always make sure you’re taking caution or being careful, which gives everyone the impression once again that you are “sus”. Cheers to your creative, dramatic, and humorous personality.<p>';
+            // show hide modal
+            modal.hidden = !modal.hidden;
+            // play sound
+                break;
+         case 'lime':
+            // displayObj.src = 'images/background.png';
+            zDisplayObj.src = 'images/lime_card.svg';
+            // display title
+            zTitleObj.innerHTML = 'LIME CREWMATE';
+            // display date range
+            zDateRangeObj.innerHTML = 'June 21 - July 22';
+            // display description
+            zMoreInfo.innerHTML = '<p>Lime is absolutely sub-lime. You manage to escape any accusation, usually by throwing Cyan under the bus, and disappearing into the crowd of characters. Your persuasive techniques along with your deep intuition and sentiments make you a challenging opponent although you have a sensitive and caring side.<p>';
+            // show hide modal
+            modal.hidden = !modal.hidden;
+            // play sound
+                break;
+         case 'red':
+            // displayObj.src = 'images/background.png';
+            zDisplayObj.src = 'images/red_card.svg';
+            // display title
+            zTitleObj.innerHTML = 'RED CREWMATE';
+            // display date range
+            zDateRangeObj.innerHTML = 'May 21 - June 20';
+            // display description
+            zMoreInfo.innerHTML = '<p>Red tends to be the most intelligent one out of all the colors since this Crewmate has a long history of being the most suspicious contender of being an Imposter. There is a myth going around that Red might be the real imposter out of all of them all this time.<p>';
+            // show hide modal
+            modal.hidden = !modal.hidden;
+            // play sound
+                break;
+         case 'orange':
+            // displayObj.src = 'images/background.png';
+            zDisplayObj.src = 'images/orange_card.svg';
+            // display title
+            zTitleObj.innerHTML = 'ORANGE CREWMATE';
+            // display date range
+            zDateRangeObj.innerHTML = 'April 20 - May 20';
+            // display description
+            zMoreInfo.innerHTML = '<p>No one can be mad at an orange and you profit off of that. You have a chill essence resonating around you due to your practical and well-grounded nature. However, you are easily persuaded but your calm energy plays off in making everyone believe it was not you. Orange, you’re chill as long as you’re not on the chopping block.<p>';
+            // show hide modal
+            modal.hidden = !modal.hidden;
+            // play sound
+                break;
+        case 'green':
+            // displayObj.src = 'images/background.png';
+            zDisplayObj.src = 'images/green_card.svg';
+            // display title
+            zTitleObj.innerHTML = 'GREEN CREWMATE';
+            // display date range
+            zDateRangeObj.innerHTML = 'March 21 – April 19';
+            // display description
+            zMoreInfo.innerHTML = '<p>One and only tactic is used by you, Dark Green. Lying. You lie through the skin of your teeth to get out of any situation, whether it’s faking a task or not being in the room (because you vented). You are a determined and courageous individual but with your nature you are constantly seeking for dynamic, speed, and competition.<p>';
+            // show hide modal
+            modal.hidden = !modal.hidden;
+            // play sound
+                break;
+        case 'brown':
+            // displayObj.src = 'images/background.png';
+            zDisplayObj.src = 'images/brown_card.svg';
+            // display title
+            zTitleObj.innerHTML = 'BROWN CREWMATE';
+            // display date range
+            zDateRangeObj.innerHTML = 'Feburary 19 – March 20 ';
+            // display description
+            zMoreInfo.innerHTML = '<p>Brown, brown, brown. You are very friendly and selfless, often finding yourself in company of others. Anytime you’re accused, your response is a mess which makes you even more suspicious, even if it is not you. If you’re clear and concise, like Purple, and combine thought actions with your chaotic character, you would be overpowered player.<p>';
+            // show hide modal
+            modal.hidden = !modal.hidden;
+            // play sound
+                break;
+        case 'blue':
+            // displayObj.src = 'images/background.png';
+            zDisplayObj.src = 'images/blue_card.svg';
+            // display title
+            zTitleObj.innerHTML = 'BLUE CREWMATE';
+            // display date range
+            zDateRangeObj.innerHTML = 'January 20 – Feburary 18';
+            // display description
+            zMoreInfo.innerHTML = '<p>People who are dark blue are all over the place. You are either shy and quiet or the most eccentric and energetic ragers. Depending on the mood, you’ll either hunt down one person and take the entire game to conqueror them or subtly take down everyone at once. Unless, of course, you blow your cover by lying about where you were.<p>';
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound

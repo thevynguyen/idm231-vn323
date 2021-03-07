@@ -43,11 +43,32 @@ body {
 .description {
     display: flex;
     justify-content: center;
-    margin: auto;
+    padding-top: 20px;
     font-size: 1.1em;
     color: white; 
     text-align: center;
 }
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+/* 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 2em;
+} */
+
+
+
 
 /* Birthday Input Form Box */
 #bday {
@@ -56,7 +77,7 @@ body {
     padding: 10px 40px;
     text-align: center; 
     color: white; 
-    margin: .75em;
+    margin-top: 20px;
     border-radius: 2px;
     font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
     font-size: 22px;
@@ -65,6 +86,7 @@ body {
 /* Submit Button */
 #submit {
     margin: auto 80px;
+    margin-bottom: 20px;
     background-color: #959595;
     border: none;
     font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
@@ -76,6 +98,9 @@ body {
     border-radius: 36px;
 }
 
+.column {
+
+}
 /* Modal */
 
 [hidden] {
@@ -139,9 +164,11 @@ body {
     cursor: pointer;
     outline: none;
     background-repeat: no-repeat;
+    margin-top: 20px;
 }
 
 /* Button Images */
+
 #white {
     background-image: url('../images/white.svg');
 }
@@ -153,6 +180,50 @@ body {
 #yellow {
     background-image: url('../images/yellow.svg');
 }
+
+#purple {
+    background-image: url('../images/purple.svg');
+}
+
+#pink {
+    background-image: url('../images/pink.svg');
+}
+
+#cyan {
+    background-image: url('../images/cyan.svg');
+}
+
+#lime {
+    background-image: url('../images/lime.svg');
+}
+
+#red {
+    background-image: url('../images/red.svg');
+}
+
+#orange {
+    background-image: url('../images/orange.svg');
+}
+
+
+#green {
+    background-image: url('../images/green.svg');
+}
+
+
+
+#brown {
+    background-image: url('../images/brown.svg');
+}
+
+
+
+#blue {
+    background-image: url('../images/blue.svg');
+}
+
+
+
 
 
 
@@ -178,16 +249,6 @@ body {
     color: #fff;
     border-radius: 50px;
 }
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin: 2em;
-}
-
-
 
 
 
