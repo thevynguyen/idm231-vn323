@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Among Us Zodiac</title>
-    <link rel="stylesheet" href="css/zodiac.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
 
-    <header>
-        <!--Birthday Form-->
+<body>
+    <h1 class="title">Among Us Zodiac</h1>
+    <p class="description">CREWMATE OR IMPOSTER?</p>
+    <!-- <header>
+
         <h1 class="title">Among Us Zodiac</h1>
-        <form id="birthday-form">
+
+        <!-- <form id="birthday-form">
             <div class="container">
                 <div class="label">
                     <label for="birthday-input">CREWMATE OR IMPOSTER?</label>
@@ -27,16 +30,22 @@
                 </div>
             </div>
         </form>
-    </header>
+    </header>  -->
 
+    <main class="blackScreen" onload="fade2Content();">
 
-    <main>
+        <div id="wrapper">
+            <div id="userinfo">
+                <p><input id="bday" type="date"></p>
+                <p><button id="submit">Submit</button></p>
+            </div>
+        </div>
        
         <div id="display" src="images/background.png" alt="blank"></div>
         <div>
             <button class="zButton" id="white"></button>
-            <button class="zButton" id="pink"></button>
-            <button class="zButton" id="blue"></button>
+            <button class="zButton" id="black"></button>
+            <button class="zButton" id="yellow"></button>
         </div>
 
         <!--Modal-->
@@ -55,159 +64,6 @@
             </div>
             <div class="blanket"></div>
         </div>
-
-
-
-
-
-        <!-- <div class="column">
-
-            <button id="white" class="crewmate" onclick="togglePopup()">
-                <img src="images/white.svg" width="100" height="100">
-                <div class="popup" id="popup-1">
-                    <div class="overlay"></div>
-                    <div class="content" id="pop-up">
-                        <div class="close-btn" onclick="togglePopup()">&times;</div>
-                        <h1 class="description-title">White</h1>
-                    </div>
-                </div>
-            </button>
-
-            <button id="pink" class="crewmate" onclick="togglePopup2()">
-                <img src="images/pink.svg" width="100" height="100">
-                <div class="popup" id="popup-2">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup2()">&times;</div>
-                        <h1 class="description-title">Pink</h1>
-                    </div>
-                </div>
-            </button>
-
-            <button id="blue" class="crewmate" onclick="togglePopup3()">
-                <img src="images/blue.svg" width="100" height="100">
-                <div class="popup" id="popup-3">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup3()">&times;</div>
-                        <h1 class="description-title">Blue</h1>
-                    </div>
-                </div>
-            </button>
-
-            <button id="brown" class="crewmate" onclick="togglePopup4()">
-                <img src="images/brown.svg" width="100" height="100">
-                <div class="popup" id="popup-4">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup4()">&times;</div>
-                        <h1 class="description-title">Brown</h1>
-                    </div>
-                </div>
-            </button>
-
-            <button id="lime" class="crewmate" onclick="togglePopup5()">
-                <img src="images/lime.svg" width="100" height="100">
-                <div class="popup" id="popup-5">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup5()">&times;</div>
-                        <h1 class="description-title">Lime</h1>
-                    </div>
-                </div>
-            </button>
-
-            <button id="black" class="crewmate" onclick="togglePopup6()">
-                <img src="images/black.svg" width="100" height="100">
-                <div class="popup" id="popup-6">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup6()">&times;</div>
-                        <h1 class="description-title">Black</h1>
-                    </div>
-                </div>
-            </button>
-
-        </div>
-
-        <div class="column">
-
-            <button id="yellow" class="crewmate" onclick="togglePopup7()">
-                <img src="images/yellow.svg" width="100" height="100">
-                <div class="popup" id="popup-7">
-                    <div class="overlay"></div>
-                    <div class="content" id="pop-up7">
-                        <div class="close-btn" onclick="togglePopup7()">&times;</div>
-                        <h1 class="description-title">Yellow</h1>
-                    </div>
-                </div>
-            </button>
-
-            <button id="green" class="crewmate" onclick="togglePopup8()">
-                <img src="images/green.svg" width="100" height="100">
-                <div class="popup" id="popup-8">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup8()">&times;</div>
-                        <h1 class="description-title">Green</h1>
-                    </div>
-                </div>
-            </button>
-
-            <button id="purple" class="crewmate" onclick="togglePopup9()">
-                <img src="images/purple.svg" width="100" height="100">
-                <div class="popup" id="popup-9">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup9()">&times;</div>
-                        <h1 class="description-title">Purple</h1>
-                    </div>
-                </div>
-            </button>
-
-            <button id="cyan" class="crewmate" onclick="togglePopup10()">
-                <img src="images/cyan.svg" width="100" height="100">
-                <div class="popup" id="popup-10">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup10()">&times;</div>
-                        <h1 class="description-title">Cyan</h1>
-                    </div>
-                </div>
-            </button>
-
-            <button id="red" class="crewmate" onclick="togglePopup11()">
-                <img src="images/red.svg" width="100" height="100">
-                <div class="popup" id="popup-11">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup11()">&times;</div>
-                        <img src="images/red_card.svg" class="card" width="200" height="200" alt="Red Card">
-                        <h2 class="description-title"><b>Red</b></h2>
-                        <h3>December 22 - January 19</h3>
-                        <p>Red tends to be the most intelligent one out of all the colors since this Crewmate has a long
-                            history of
-                            being the most suspicious contender for Imposter. There is a myth going around that Red
-                            might have been
-                            the real Imposter all this time.</p>
-                    </div>
-                </div>
-            </button>
-
-
-
-            <button id="orange" class="crewmate" onclick="togglePopup12()">
-                <img src="images/orange.svg" width="100" height="100">
-                <div class="popup" id="popup-12">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup12()">&times;</div>
-                        <h1 class="description-title">Orange</h1>
-                    </div>
-                </div>
-            </button>
-
-        </div> -->
 
     </main>
     <script type="text/javascript" src="main.js"></script>
