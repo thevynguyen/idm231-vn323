@@ -18,7 +18,8 @@ var redObj = document.getElementById('red');
 var orangeObj = document.getElementById('orange');
 var greenObj = document.getElementById('green');
 var brownObj = document.getElementById('brown');
-var blueObj = document.getElementById('green');
+var blueObj = document.getElementById('blue');
+var sosObj = document.getElementById('sos');
 
 
 const displayObj = document.getElementById('display');
@@ -97,6 +98,73 @@ blueObj.addEventListener('click', function (evt) {
     userPicked(idName);
 });
 
+sosObj.addEventListener('click', function (evt) {
+    console.log('sos button clicked: ' + evt.target.id);
+    const idName = evt.target.id;
+    userPicked(idName);
+});
+
+
+// Sound Controls TBD //
+
+function stopAllAudio() {
+    startRoundObj.pause();
+    startRoundObj.currentTime = 0;
+    //
+    crisisObj.pause();
+    crisisObj.currentTime = 0;
+    //
+    stabbingObj.pause();
+    stabbingObj.currentTime = 0;
+    //
+    doorOpenObj.pause();
+    doorOpenObj.currentTime = 0;
+    //
+    joinLobbyObj.pause();
+    joinLobbyObj.currentTime = 0;
+    //
+    killObj.pause();
+    killObj.currentTime = 0;
+    //
+    reportObj.pause();
+    reportObj.currentTime = 0;
+    //
+    victoryObj.pause();
+    victoryObj.currentTime = 0;
+    //
+    rejectedObj.pause();
+    rejectedObj.currentTime = 0;
+    //
+    scanObj.pause();
+    scanObj.currentTime = 0;
+    //
+    deathObj.pause();
+    deathObj.currentTime = 0;
+    //
+    voteObj.pause();
+    voteObj.currentTime = 0;
+
+    // SOS Sound Button
+    emergencyMeetObj.pause();
+    emergencyMeetObj.currentTime = 0;
+}
+
+const startRoundObj = document.getElementById('startRound');
+const crisisObj = document.getElementById('crisis');
+const stabbingObj = document.getElementById('stabbing');
+const doorOpenObj = document.getElementById('doorOpen');
+const emergencyMeetObj = document.getElementById('emergencyMeet');
+const joinLobbyObj = document.getElementById('joinLobby');
+const killObj = document.getElementById('kill');
+const reportObj = document.getElementById('report');
+const victoryObj = document.getElementById('victory');
+const rejectedObj = document.getElementById('rejected');
+const scanObj = document.getElementById('scan');
+const deathObj = document.getElementById('death');
+const voteObj = document.getElementById('vote');
+
+
+
 function userPicked(whichOne) {
     console.log('userPicked called: ' + whichOne);
     switch (whichOne) {
@@ -112,6 +180,8 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
+            stopAllAudio();
+            startRoundObj.play();
             break;
         case 'black':
             // displayObj.src = 'images/background.png';
@@ -125,7 +195,9 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
-                break;
+            stopAllAudio();
+            crisisObj.play();
+            break;
         case 'yellow':
             // displayObj.src = 'images/background.png';
             zDisplayObj.src = 'images/yellow_card.svg';
@@ -138,7 +210,9 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
-                break;
+            stopAllAudio();
+            stabbingObj.play();
+            break;
         case 'purple':
             // displayObj.src = 'images/background.png';
             zDisplayObj.src = 'images/purple_card.svg';
@@ -151,7 +225,9 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
-                break;
+            stopAllAudio();
+            doorOpenObj.play();
+            break;
          case 'pink':
             // displayObj.src = 'images/background.png';
             zDisplayObj.src = 'images/pink_card.svg';
@@ -164,7 +240,9 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
-                break;
+            stopAllAudio();
+            joinLobbyObj.play();
+            break;
          case 'cyan':
             // displayObj.src = 'images/background.png';
             zDisplayObj.src = 'images/cyan_card.svg';
@@ -177,7 +255,9 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
-                break;
+            stopAllAudio();
+            killObj.play();
+            break;
          case 'lime':
             // displayObj.src = 'images/background.png';
             zDisplayObj.src = 'images/lime_card.svg';
@@ -190,7 +270,9 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
-                break;
+            stopAllAudio();
+            reportObj.play();
+            break;
          case 'red':
             // displayObj.src = 'images/background.png';
             zDisplayObj.src = 'images/red_card.svg';
@@ -203,7 +285,9 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
-                break;
+            stopAllAudio();
+            victoryObj.play();
+            break;
          case 'orange':
             // displayObj.src = 'images/background.png';
             zDisplayObj.src = 'images/orange_card.svg';
@@ -216,7 +300,9 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
-                break;
+            stopAllAudio();
+            rejectedObj.play();
+            break;
         case 'green':
             // displayObj.src = 'images/background.png';
             zDisplayObj.src = 'images/green_card.svg';
@@ -229,7 +315,9 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
-                break;
+            stopAllAudio();
+            scanObj.play();
+            break;
         case 'brown':
             // displayObj.src = 'images/background.png';
             zDisplayObj.src = 'images/brown_card.svg';
@@ -242,7 +330,9 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
-                break;
+            stopAllAudio();
+            deathObj.play();
+            break;
         case 'blue':
             // displayObj.src = 'images/background.png';
             zDisplayObj.src = 'images/blue_card.svg';
@@ -255,17 +345,23 @@ function userPicked(whichOne) {
             // show hide modal
             modal.hidden = !modal.hidden;
             // play sound
-                break;
+            stopAllAudio();
+            voteObj.play();
+            break;
+        case 'sos':
+            zDisplayObj.src = 'images/sos_card.svg';
+            zTitleObj.innerHTML = 'Welcome to the Support Deck!'
+            zDateRangeObj.innerHTML = '';
+            zMoreInfo.innerHTML = '<p>You can complete your task and survive by finding out which Crewmate you are associated with by entering your birthday. Find out and hone your skills in order to win! Pick a Date OR click any of the Crewmate icons to view. Who knows...could you potentially be an Imposter?</p>';
+            modal.hidden = !modal.hidden;
+            // play sound 
+            stopAllAudio();
+            emergencyMeetObj.play();
+            break;
         default:
             displayObj.src ='images/background.png';
     }
 }
-
-
-
-// Sound Controls TBD //
-
-
 
 
 // Modal Controls
@@ -275,6 +371,7 @@ const modal = document.getElementById('modal');
 const closeModalObj = document.getElementById('btn-modal-close');
 closeModalObj.addEventListener('click', function () {
     modal.hidden = !modal.hidden;
+    stopAllAudio();
 });
 
 // // Link modal elements/objects to JS

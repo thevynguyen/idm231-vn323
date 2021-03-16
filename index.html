@@ -12,7 +12,7 @@
 
 <body>
     <h1 class="title">Among Us Zodiac</h1>
-    <p class="description">CREWMATE OR IMPOSTER?</p>
+    <p class="description">ARE YOU A CREWMATE OR IMPOSTER?</p>
     <!-- <header>
 
         <h1 class="title">Among Us Zodiac</h1>
@@ -33,6 +33,23 @@
     </header>  -->
 
     <main class="blackScreen" onload="fade2Content();">
+        <!-- Sound Files -->
+        <audio id="startRound" src="sounds/startRound.mp3" preload="auto"></audio>
+        <audio id="crisis" src="sounds/crisis.mp3" preload="auto"></audio>
+        <audio id="stabbing" src="sounds/stabbing.mp3" preload="auto"></audio>
+        <audio id="doorOpen" src="sounds/doorOpen.mp3" preload="auto"></audio>
+        <audio id="joinLobby" src="sounds/joinLobby.mp3" preload="auto"></audio>
+        <audio id="kill" src="sounds/kill.mp3" preload="auto"></audio>
+        <audio id="report" src="sounds/report.mp3" preload="auto"></audio>
+        <audio id="victory" src="sounds/victory.mp3" preload="auto"></audio>
+        <audio id="rejected" src="sounds/rejected.mp3" preload="auto"></audio>
+        <audio id="scan" src="sounds/scan.mp3" preload="auto"></audio>
+        <audio id="death" src="sounds/death.mp3" preload="auto"></audio>
+        <audio id="vote" src="sounds/vote.mp3" preoload="auto"></audio>
+        
+
+
+        <audio id="emergencyMeet" src="sounds/emergencyMeet.mp3" preload="auto"></audio>
 
         <div id="wrapper">
             <div id="userinfo">
@@ -42,6 +59,7 @@
         </div>
        
         <div id="display" src="images/background.png" alt="blank"></div>
+
         <div class="column">
             <div class="row">
                 <button class="zButton" id="white"></button>
@@ -58,9 +76,11 @@
                 <button class="zButton" id="green"></button>
                 <button class="zButton" id="brown"></button>
                 <button class="zButton" id="blue"></button>
+                <button class="zButton" id="sos"></button>
             </div>
-        
         </div>
+
+
 
         <!--Modal-->
         <div id="modal" class="modal" hidden>
@@ -69,7 +89,8 @@
                     <div>
                         <img id="zDisplayImg" src="images/white.svg" alt="zodiac button img">
                     </div>
-                    <p><span id="zTitle">Title</span>, <span id="zDateRange">Date Range</span></p>
+                    <p><span id="zTitle">Title</span></p>
+                    <p><span id="zDateRange">Date Range</span></p>
                     <div id="zMoreInfo">
                         <p>Description insert here!</p>
                     </div>

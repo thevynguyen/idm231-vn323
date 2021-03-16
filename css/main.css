@@ -44,30 +44,22 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    font-size: 1.1em;
-    color: white; 
+    font-size: 1em;
+    color: white;
     text-align: center;
 }
 
 main {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
     flex-direction: column;
     margin: auto;
-
 }
 
-/* 
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin: 2em;
-} */
-
-
+.column {
+    padding-left: 250px;
+}
 
 
 /* Birthday Input Form Box */
@@ -98,9 +90,7 @@ main {
     border-radius: 36px;
 }
 
-.column {
 
-}
 /* Modal */
 
 [hidden] {
@@ -165,6 +155,11 @@ main {
     outline: none;
     background-repeat: no-repeat;
     margin-top: 20px;
+    opacity: 1;
+}
+
+.zButton:hover {
+    opacity: .5;
 }
 
 /* Button Images */
@@ -217,14 +212,15 @@ main {
 }
 
 
-
 #blue {
     background-image: url('../images/blue.svg');
 }
 
-
-
-
+#sos {
+    background-image: url('../images/sos.svg');
+    transform: translate(180px, -700px);
+    width: 280px;
+}
 
 
 /* Description */
@@ -233,10 +229,10 @@ main {
     font-size: .65em;
     text-align: start;
     line-height: 1.35em;
-    padding: 5px 20px;
+    padding: 5px 15px;
 }
-/* Close Modal */
 
+/* Close Modal */
 #btn-modal-close {
     position: absolute;
     border: none;
@@ -249,28 +245,6 @@ main {
     color: #fff;
     border-radius: 50px;
 }
-
-
-
-/* Arrow Buttons 
-a {
-    text-decoration: none;
-    display: inline-block;
-}
-
-.previous {
-    border-radius: 50%;
-    color: #c4c4c4;
-    transform: translate(-15px, -80px);
-}
-
-.next {
-    border-radius: 50%;
-    color: #c4c4c4;
-    transform: translate(250px, -80px);
-}'
-
-*/
 
 /* Background Image */
 
