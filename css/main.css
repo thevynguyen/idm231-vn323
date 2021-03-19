@@ -145,7 +145,7 @@ main {
     border-radius: .75rem;
 
     height: 70vh;
-    max-width: 38vw;
+    max-width: 30vw;
 
     position: relative;
     z-index: 101;
@@ -170,7 +170,6 @@ main {
     background-position: center;
     outline: none;
     background-repeat: no-repeat;
-    opacity: 1;
 }
 
 .zButton:hover, #bday:hover, #submit:hover {
