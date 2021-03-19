@@ -162,14 +162,15 @@ main {
 }
 
 .zButton {
-    width: 150px;
-    height: 150px;
-    background-size: 90%;
-    border: none;
-    background-color: transparent;
-    background-position: center;
-    outline: none;
-    background-repeat: no-repeat;
+	width: 150px;
+	height: 150px;
+	outline: none;
+	padding: 1rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: transparent;
 }
 
 .zButton:hover, #bday:hover, #submit:hover {
@@ -236,7 +237,7 @@ main {
     position: fixed;
     top: 0;
     right: 0;
-    margin-right: 1rem;
+    margin-right: 2.5rem;
 }
 
 
