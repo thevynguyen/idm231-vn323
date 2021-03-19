@@ -19,6 +19,7 @@
     url(../fonts/blinker-semibold-webfont.woff) format('woff');
  }
  
+
  /* Site Title */
 h1 {
     color: white; 
@@ -31,13 +32,6 @@ body {
     font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
     font-size: 2.3em;
 }
-
-/* .container {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-} */
 
 /* Question Title */
 .description {
@@ -58,7 +52,7 @@ main {
 }
 
 .column {
-    padding-left: 250px;
+    padding-left: 200px;
 }
 
 
@@ -129,8 +123,8 @@ main {
     background-color: white;
     border-radius: .75rem;
 
-    height: 65vh;
-    max-width: 26vw;
+    height: 70vh;
+    max-width: 38vw;
 
     position: relative;
     z-index: 101;
@@ -218,8 +212,8 @@ main {
 
 #sos {
     background-image: url('../images/sos.svg');
-    transform: translate(180px, -700px);
-    width: 280px;
+    transform: translate(880px, -885px);
+    /* width: 500px; */
 }
 
 
@@ -229,7 +223,7 @@ main {
     font-size: .65em;
     text-align: start;
     line-height: 1.35em;
-    padding: 5px 15px;
+    padding: 5px 20px;
 }
 
 /* Close Modal */
@@ -253,5 +247,5 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    /* height: 100%; */
 }

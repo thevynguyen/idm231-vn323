@@ -352,7 +352,7 @@ function userPicked(whichOne) {
             zDisplayObj.src = 'images/sos_card.svg';
             zTitleObj.innerHTML = 'Welcome to the Support Deck!'
             zDateRangeObj.innerHTML = '';
-            zMoreInfo.innerHTML = '<p>You can complete your task and survive by finding out which Crewmate you are associated with by entering your birthday. Find out and hone your skills in order to win! Pick a Date OR click any of the Crewmate icons to view. Who knows...could you potentially be an Imposter?</p>';
+            zMoreInfo.innerHTML = '<p>You can complete your task and survive by finding out which Crewmate you are associated with by entering your birthday. Find out and hone your skills in order to win! Pick a Date OR click any of the Crewmate icons to view. Who knows...could you potentially be an Imposter? Credit to the Among Us creators and artists for the images and sounds!</p>';
             modal.hidden = !modal.hidden;
             // play sound 
             stopAllAudio();
