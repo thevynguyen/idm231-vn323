@@ -86,8 +86,6 @@ main {
 
 /* Submit Button */
 #submit {
-    /* margin: auto 80px; */
-    /* margin-bottom: 20px; */
     background-color: #959595;
     border: none;
     font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
@@ -158,6 +156,7 @@ main {
 .zButton {
     width: 150px;
     height: 150px;
+    background-size: 90%;
     border: none;
     background-color: transparent;
     background-size: cover;
