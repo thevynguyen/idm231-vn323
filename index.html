@@ -12,11 +12,19 @@
 
 
 <body>
-    <h1 class="title">Among Us Zodiac</h1>
-    <p class="description">ARE YOU A CREWMATE OR IMPOSTER?</p>
-   
 
     <main class="blackScreen" onload="fade2Content();">
+
+        <div class="new">
+            <h1 class="title">Among Us Zodiac</h1>
+            <p class="description">ARE YOU A CREWMATE OR IMPOSTER?</p>
+            <div id="wrapper">
+                <input id="bday" type="date">
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+      
+
         <!-- Sound Files -->
         <audio id="startRound" src="sounds/startRound.mp3" preload="auto"></audio>
         <audio id="crisis" src="sounds/crisis.mp3" preload="auto"></audio>
@@ -32,15 +40,9 @@
         <audio id="vote" src="sounds/vote.mp3" preload="auto"></audio>
         
 
-
         <audio id="emergencyMeet" src="sounds/emergencyMeet.mp3" preload="auto"></audio>
 
-        <div id="wrapper">
-                <input id="bday" type="date">
-                <button id="submit">Submit</button>
-        </div>
 
-        <div id="display" src="images/background.png"></div>
 
         <div class="column">
             <div class="row">
