@@ -41,6 +41,10 @@ body {
 	text-align: center;
 }
 
+#zTitle {
+	margin-top: 2rem;
+}
+
 .description,
 #bday,
 #submit {
