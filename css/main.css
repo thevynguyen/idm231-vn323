@@ -168,14 +168,14 @@ main {
     border: none;
     background-color: transparent;
     background-position: center;
-    cursor: pointer;
     outline: none;
     background-repeat: no-repeat;
     opacity: 1;
 }
 
-.zButton:hover {
-    opacity: .5;
+.zButton:hover, #bday:hover, #submit:hover {
+    cursor: pointer;
+    opacity: .5,
 }
 
 /* Button Images */
