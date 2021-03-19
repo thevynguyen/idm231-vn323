@@ -44,6 +44,10 @@ body {
     text-align: center;
 }
 
+.description, #bday, #submit {
+    margin-bottom: 1rem;
+}
+
 main {
     display: flex;
     justify-content: space-evenly;
