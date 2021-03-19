@@ -31,6 +31,7 @@ h1 {
 body {
     font-family: 'chewy-regular', Arial, Helvetica, sans-serif;
     font-size: 2.3em;
+    min-height: 100vh;
 }
 
 /* Question Title */
@@ -52,7 +53,10 @@ main {
 }
 
 .column {
-    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -148,7 +152,6 @@ main {
     cursor: pointer;
     outline: none;
     background-repeat: no-repeat;
-    margin-top: 20px;
     opacity: 1;
 }
 
@@ -212,8 +215,9 @@ main {
 
 #sos {
     background-image: url('../images/sos.svg');
-    transform: translate(880px, -885px);
-    /* width: 500px; */
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 
@@ -247,5 +251,5 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100%; */
+    min-height: 100vh;
 }
