@@ -159,8 +159,6 @@ main {
     background-size: 90%;
     border: none;
     background-color: transparent;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     outline: none;
@@ -231,6 +229,7 @@ main {
     position: fixed;
     top: 0;
     right: 0;
+    margin-right: 1rem;
 }
 
 
