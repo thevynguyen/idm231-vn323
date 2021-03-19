@@ -88,6 +88,10 @@ main {
     font-size: 22px;
 }
 
+#bday::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 /* Submit Button */
 #submit {
     background-color: #959595;
