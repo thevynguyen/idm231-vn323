@@ -165,7 +165,7 @@ main {
 
 .zButton:hover,
 #bday:hover,
-#submit:hover {
+#submit:hover, #btn-modal-close:hover {
 	cursor: pointer;
 	opacity: 0.5;
 }
